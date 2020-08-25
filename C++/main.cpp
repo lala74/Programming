@@ -32,6 +32,10 @@ int main()
 
     cout << "----------\n\n\n";
 
+    HLT_CConfigFileManager configFile;
+
+    cout << "----------\n\n\n";
+
     // try {
     //     throw string("Doesn't need");
     //     cout << "\n\n\n----------" << endl;

@@ -1,0 +1,14 @@
+{
+    "name": "Learning test for C++",
+    "description": "",
+    "version": "1.0.0",
+    "main": "main.cpp",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lala74/Programming"
+    },
+    "keywords": [],
+    "author": "Minh Duc LA",
+    "authoremail": "laminhduc07042@gmail.com",
+    "license": "ISC"
+  }

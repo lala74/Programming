@@ -1,8 +1,9 @@
 /*
- * HLTCConfigFileManager.h
- *
- *  Created on: 11 févr. 2020
- *      Author: kristenbediou
+ * File: HLT_CConfigFileManager.h
+ * Project: Learning test for C++
+ * Date: Thursday, 4th June 2020 9:54:20 pm
+ * Author: Minh Duc LA (laminhduc07042@gmail.com)
+ * Copyright 2020
  */
 
 #ifndef HLT_CCONFIGFILEMANAGER_H_
@@ -13,9 +14,6 @@
 #include <string.h>
 #include <map>
 #include <set>
-// #include "HLT_CAppProperties.h"
-
-// extern HLT_CAppProperties HLT_APP_PROPERTIES;
 
 using namespace std;
 class HLT_CConfigFileManager

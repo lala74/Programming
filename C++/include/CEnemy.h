@@ -51,18 +51,10 @@ private:
 
 public:
     tempClass();
-    tempClass(T a, T b)
-    {
-        m_a = a;
-        m_b = b;
-    }
+    tempClass(T a, T b);
     T bigger();
 };
 
-template <class T>
-T tempClass<T>::bigger()
-{
-    return (m_a > m_b ? m_a : m_b);
-}
+void learning_test_for_CEnemy();
 
 #endif

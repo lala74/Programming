@@ -1,9 +1,11 @@
 /*
- * HLT_Cm_pConfigFileManager.cpp
- *
- *  Created on: 11 févr. 2020
- *      Author: kristenbediou
+ * File: HLT_CConfigFileManager.cpp
+ * Project: Learning test for C++
+ * Date: Thursday, 4th June 2020 11:53:13 am
+ * Author: Minh Duc LA (laminhduc07042@gmail.com)
+ * Copyright 2020
  */
+
 #include <iostream>
 #include <string>
 #include <libgen.h>

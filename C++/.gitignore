@@ -44,7 +44,6 @@ CustomerSetup.*tgz*
 .version.txt
 cours/
 build/
-tmp/
 
 #######################
 # QT

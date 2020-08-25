@@ -14,6 +14,7 @@
 #include <string>
 
 #include "CEnemy.h"
+#include "CRegex.h"
 #include "HLT_CConfigFileManager.h"
 #include "HLT_Cprocess.h"
 #include "HLT_shell_utils.h"
@@ -26,15 +27,15 @@ const int HLT_kDebug = 1;
 
 int main()
 {
-    cout << "----------\n\n\n";
-
+    cout << "---------- CEnemy" << endl;
     learning_test_for_CEnemy();
 
-    cout << "----------\n\n\n";
-
+    cout << "---------- Config File" << endl;
     HLT_CConfigFileManager configFile;
 
-    cout << "----------\n\n\n";
+    cout << "---------- Regex" << endl;
+    learning_test_for_regex();
+    cout << "----------" << endl;
 
     // try {
     //     throw string("Doesn't need");

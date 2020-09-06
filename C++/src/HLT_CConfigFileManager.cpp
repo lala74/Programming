@@ -199,3 +199,8 @@ void HLT_CConfigFileManager::print_and_free_error(GError* error)
         g_error_free(error);
     }
 }
+
+void learning_test_for_config_file()
+{
+    HLT_CConfigFileManager configFile;
+}

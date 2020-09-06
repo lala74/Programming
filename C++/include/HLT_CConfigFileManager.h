@@ -62,4 +62,6 @@ private:
     std::map<std::string, std::map<std::string, std::set<std::string>>> m_mapConfigFile;  // map contain all valid values of all keys
 };
 
+void learning_test_for_config_file();
+
 #endif /* HLT_CCONFIGFILEMANAGER_H_ */

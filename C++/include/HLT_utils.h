@@ -43,16 +43,36 @@ inline void HLT_Msg(const std::string&& type_, const std::string& msg_, const ch
     if(type_ == "Error") cout << szHLT_TERM_COLOR_RESET;
     cout << endl;
 }
+
+/**********************/
+/*  Common functions  */
+/**********************/
+
 #define HLT_errMsg(arg) HLT_Msg("Error", arg, __FILE__, __LINE__, __FUNCTION__);
+
 inline void HLT_dbgMsg(const std::string& msg_)
 {
     if(HLT_kDebug) {
         cout << szHLT_DEBUG << msg_ << endl;
     }
 }
+
 inline void HLT_infMsg(const std::string& msg_)
 {
     cout << szHLT_INFO << msg_ << endl;
+}
+
+inline void HLT_title(const std::string& title)
+{
+    uint sizeTitle = title.length();
+    uint sizeLine = sizeTitle + 4 * 2;
+
+    cout << "\n\n";
+    for(uint i = 0; i < sizeLine; i++) cout << "*";
+    cout << "\n";
+    cout << "*   " << title << "   *" << endl;
+    for(uint i = 0; i < sizeLine; i++) cout << "*"; 
+    cout << "\n";
 }
 
 #endif /* __HLT_UTILS_H */

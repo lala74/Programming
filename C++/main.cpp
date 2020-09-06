@@ -27,15 +27,14 @@ const int HLT_kDebug = 1;
 
 int main()
 {
-    cout << "---------- CEnemy" << endl;
+    HLT_title("CEnemy");
     learning_test_for_CEnemy();
 
-    cout << "---------- Config File" << endl;
-    HLT_CConfigFileManager configFile;
+    HLT_title("Config File");
+    learning_test_for_config_file();
 
-    cout << "---------- Regex" << endl;
+    HLT_title("Regex");
     learning_test_for_regex();
-    cout << "----------" << endl;
 
     // try {
     //     throw string("Doesn't need");
@@ -75,6 +74,8 @@ int main()
     // parameters_str = g_variant_print(value4, TRUE);
     // g_print("value: %s\n", parameters_str);
     // g_free(parameters_str);
+
+    HLT_title("END");
 
     return 0;
 }

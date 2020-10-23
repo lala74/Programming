@@ -155,6 +155,8 @@ function md_update_ubuntu() {
     check_return_value $?
     echo ${PASSWORD} | sudo -u root --stdin apt-get upgrade -y
     check_return_value $?
+    echo ${PASSWORD} | sudo -u root --stdin apt --fix-broken install
+    check_return_value $?
 }
 
 function md_git_lazy() {

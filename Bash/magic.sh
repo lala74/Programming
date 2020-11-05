@@ -153,10 +153,13 @@ function md_open_TODO() {
 function md_update_ubuntu() {
     echo ${PASSWORD} | sudo -u root --stdin apt-get update
     check_return_value $?
+    sleep 1
     echo ${PASSWORD} | sudo -u root --stdin apt-get upgrade -y
     check_return_value $?
+    sleep 1
     echo ${PASSWORD} | sudo -u root --stdin apt --fix-broken install
     check_return_value $?
+    sleep 1
 }
 
 function md_git_lazy() {

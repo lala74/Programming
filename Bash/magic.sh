@@ -284,3 +284,7 @@ function md_connect_HLT_azure_vm() {
 function md_send_file_to_HLT_azure_vm() {
     sshpass -p '$Minh42duc' scp ${1} DevBE@52.233.130.26:${2}
 }
+
+function md_start_xampp() {
+    echo ${PASSWORD} | sudo -u root --stdin /opt/lampp/lampp start
+}
